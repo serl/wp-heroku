@@ -26,6 +26,10 @@ Bugs, feature request and so on
 -------------------------------
 Feel free to contact me: https://github.com/serl/wp-heroku/issues
 
+Terms of use
+------------
+You use all you can find in this repository at your own risk, blah blah...
+
 TODO
 ----
 + automatic activation of permalinks
