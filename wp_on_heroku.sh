@@ -168,6 +168,14 @@ mkdir -p "wp-content/mu-plugins" &&
 
 cat >wp-content/mu-plugins/load.php <<EOF
 <?php // mu-plugins/load.php
+/**
+Plugin Name: WP Heroku
+Plugin URI: https://github.com/serl/wp-heroku
+Description: This plugin simply loads WP Read-Only and WP-Mail-SMTP.
+Version: 1.0
+Author: serl
+ */
+
 require WPMU_PLUGIN_DIR.'/wp-mail-smtp/wp_mail_smtp.php';
 require WPMU_PLUGIN_DIR.'/wpro/wpro.php';
 
