@@ -125,8 +125,6 @@ define('WP_POST_REVISIONS', 5);
 
 //deny theme and plugins file edits
 define('DISALLOW_FILE_EDIT', true);
-//and update
-define('DISALLOW_FILE_MODS', true);
 
  // ** WP Mail SMTP configuration ** //
 define('WPMS_ON', true);
