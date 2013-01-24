@@ -5,7 +5,7 @@ an easy way to deploy WordPress on Heroku platform, using Amazon S3, ClearDB and
 
 How to
 ------
-./wp-on-heroku.sh [repository name]
+	./wp-on-heroku.sh [repository name]
 accepts one optional parameter, that will become the subdirectory there all the magic will happens and the heroku app name.
 It will download and configure WordPress for Heroku, and configure Heroku for WordPress, and deploy WordPress to Heroku.
 
