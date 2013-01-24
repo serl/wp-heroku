@@ -42,8 +42,9 @@ heroku create $reponame &&
 rollback "unable to create and configure heroku application"
 
 echo
-echo "DOWNLOADING AND INSTALLING WORDPRESS"
+echo "DOWNLOADING WORDPRESS"
 wget "http://wordpress.org/latest.tar.gz" &&
+echo "DECOMPRESSING..." &&
 tar xzf latest.tar.gz &&
 mv wordpress/* . &&
 rmdir wordpress &&
@@ -161,7 +162,7 @@ require_once(ABSPATH . 'wp-settings.php');
 EOF
 
 echo
-echo "DONWLOADING AND INSTALLING PLUGINS"
+echo "DONWLOADING PLUGINS"
 
 mkdir -p "wp-content/mu-plugins" &&
 
