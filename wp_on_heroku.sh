@@ -160,7 +160,11 @@ require_once(ABSPATH . 'wp-settings.php');
 EOF
 
 echo
-echo "DONWLOADING PLUGINS"
+echo "ADDING wp-update-cli.php"
+cp "../wp-update-cli.php" .
+
+echo
+echo "DOWNLOADING PLUGINS"
 
 mkdir -p "wp-content/mu-plugins" &&
 
@@ -206,4 +210,5 @@ echo
 echo "After that you're free to add themes/plugins/localization locally, do some git commit and git push heroku master."
 echo
 echo "When you see notifications for updates in WordPress administration, you have to update them in this git repository, and then git push heroku master."
-echo "IMPORTANT: WP Read Only and WP Mail SMTP are 'must-use plugins'. So they're automatically active, but hidden on the WordPress panel, so you WON'T SEE any update notification! ...now and then, go in their directories and do a git pull in order to get the lastest version"
+echo "To do so, you have in your WordPress' root wp-update-cli.php, that you can use to update core, themes and plugins. Beware! It'll put your site in maintenance mode! (waiting to you to git push heroku master, heroku maintenance:off)"
+echo "IMPORTANT: WP Read Only and WP Mail SMTP are 'must-use plugins'. So they're automatically active, but hidden on the WordPress panel, so you WON'T SEE any update notification! ...now and then, go in their directories and do a git pull in order to get the latest version"
