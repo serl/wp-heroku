@@ -25,6 +25,11 @@ If you add the 'heroku' parameter, it will ask Heroku the environment variables 
 
 PAY ATTENTION: If you use it in other contexts (yes, you can! In every WordPress git repository!), know that it will assume that hack in repo: https://nealpoole.com/blog/2010/06/how-to-disable-wordpresss-upgrade-system/.
 
+Known issues
+------------
++ Due a bug in WordPress importer and/or WP Read Only, you'll have problems importing. That's because the xml will be saved as txt in S3, so the imported won't able to find it.
+
+
 Bugs, feature request and so on
 -------------------------------
 Feel free to contact me: https://github.com/serl/wp-heroku/issues
