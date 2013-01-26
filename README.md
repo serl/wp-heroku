@@ -28,7 +28,8 @@ PAY ATTENTION: If you use it in other contexts (yes, you can! In every WordPress
 Known issues
 ------------
 + Due a bug in WordPress importer and/or WP Read Only, you'll have problems importing. That's because the xml will be saved as txt in S3, so the imported won't able to find it.
-
++ Plugin Broken Link Checker seems to be explosive. I've to do more investigation.
++ I can't authenticate to WordPress.com, configuring JetPack. I'm investigating...
 
 Bugs, feature request and so on
 -------------------------------
